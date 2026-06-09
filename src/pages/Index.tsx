@@ -5,12 +5,15 @@ import HeartAnimation from '../components/HeartAnimation';
 import FloatingText from '../components/FloatingText';
 import LoveLetter from '../components/LoveLetter';
 import PhotoSlider from '../components/PhotoSlider';
+import LoveCounter from '../components/LoveCounter';
+import ForeverProposal from '../components/ForeverProposal';
 import SurpriseButton from '../components/SurpriseButton';
 import ParticleHeart from '../components/ParticleHeart';
 import SurpriseModal from '../components/SurpriseModal';
 import FlowerPetals from '../components/FlowerPetals';
 import SweetQuotes from '../components/SweetQuotes';
 import AnimatedImageGrid from '../components/AnimatedImageGrid';
+
 
 const Index = () => {
   const [showIntro, setShowIntro] = useState(true);
@@ -108,7 +111,10 @@ const Index = () => {
         <div className="w-full max-w-4xl mb-12">
           <LoveLetter />
         </div>
-
+        {/* Love Counter Section */}
+        <div className="w-full max-w-4xl mb-12">
+          <LoveCounter />
+        </div>
         {/* Photo Slider Section */}
         <div className="w-full max-w-4xl mb-12">
           <PhotoSlider />
@@ -122,6 +128,11 @@ const Index = () => {
         {/* Surprise Button */}
         <div className="mb-12">
           <SurpriseButton onReveal={handleSurpriseClick} />
+        </div>
+        
+        {/*Forever Proposal */}
+        <div className="w-full max-w-4xl mb-12">
+          <ForeverProposal />
         </div>
 
         {/* Surprise Animation */}
