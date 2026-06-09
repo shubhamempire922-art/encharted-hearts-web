@@ -21,7 +21,7 @@ const Index = () => {
   useEffect(() => {
     // Auto-play background music
     const audio = new Audio();
-    audio.src = "https://www.soundjay.com/misc/sounds/romantic-music.mp3";
+    audio.src = "/music/song.mp3";
     audio.loop = true;
     audio.volume = 0.3;
     
@@ -133,7 +133,7 @@ const Index = () => {
 
       {/* Audio element for background music */}
       <audio loop>
-        <source src="https://www.soundjay.com/misc/sounds/romantic-music.mp3" type="audio/mpeg" />
+        <source src="/music/song.mp3" type="audio/mpeg" />
       </audio>
     </div>
   );
